@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="GitLab Pages">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web 8</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Форма</h1>
+    <button id="openButton">Оставьте свои данные</button>
+    <div class="fixed-overlay">
+      <div class="modal">
+        <form id="form" action="https://formcarry.com/s/LCsTw0edD-" method="POST">
+        <label>
+          Имя<br />
+          <input name="name" id="name" required />
+        </label><br />
+
+        <label>
+          E-mail:<br />
+          <input name="email" id="email" type="email" required />
+        </label><br />
+
+        <label>
+          Сообщение:<br />
+          <textarea name="message" id="message" required /></textarea>
+        </label><br />
+
+        <br />
+        <label><input type="checkbox" id="policy"
+          name="policy" required />
+          Принимаю политику обработки персональных данных
+        </label><br />
+
+        <input id="sendButton" type="submit" value="Отправить" disabled />
+      </form>
+      <button id="closeButton">Закрыть</button>
+      </div>
+    </div>
+  </body>
+</html>
+
